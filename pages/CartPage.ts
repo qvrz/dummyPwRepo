@@ -5,7 +5,6 @@ export class CartPage {
   readonly inventoryPrice: Locator;
   readonly checkoutButton: Locator;
 
-
   constructor(page: Page) {
     this.page = page;
     this.inventoryPrice = page.getByTestId('inventory-item-price');

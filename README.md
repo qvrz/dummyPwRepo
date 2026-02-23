@@ -53,11 +53,11 @@ This repository contains end-to-end tests for the application using Playwright. 
 - **Playwright Config**:
   The `playwright.config.ts` file contains shared settings, such as the `baseURL` and browser configurations. It also defines separate projects for unauthenticated and authenticated tests.
 - **Environment Variables**:
-  Sensitive data, such as credentials, should be stored in environment variables. Use a `.env` file for local development.
+  For the sake of this demo, as those credentials are public we have stored them in `testData.ts` file.
+  Sensitive data, such as credentials, should always be stored in environment variables or using secret managing services. Use a `.env` file for local development. 
 
 ### Ignored Files
 - Files like `auth/user.json` (used for storing authentication state) are ignored in `.gitignore` to prevent sensitive data from being committed.
 
-## Notes
-- Ensure that the `baseURL` in `playwright.config.ts` matches the environment you are testing.
-- Use the `test:ui` mode for debugging failing tests.
+### Further steps
+- Further steps to take would probably be integrating the project with ESLint and Prettier tools.

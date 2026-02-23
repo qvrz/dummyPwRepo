@@ -5,7 +5,7 @@ import { CheckoutInformationPage } from '../../pages/CheckoutInformationPage';
 import { CheckoutConfirmationPage } from '../../pages/CheckoutConfirmationPage';
 
 test.describe('Process Checkout', () => {
-  const productsToAdd = ['Sauce Labs Backpack']; 
+  const productsToAdd = ['Sauce Labs Backpack', 'Sauce Labs Bike Light']; 
 
   test('should add products to cart and verify total price', async ({ page }) => {
     const productsPage = new ProductsPage(page);
