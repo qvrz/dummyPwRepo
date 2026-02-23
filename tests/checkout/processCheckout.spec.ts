@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 import { ProductsPage } from '../../pages/ProductsPage';
 import { CartPage } from '../../pages/CartPage';
-import { CheckoutInformationPage } from '../../pages/checkoutInformationPage';
-import { CheckoutConfirmationPage } from '../../pages/checkoutConfirmationPage';
+import { CheckoutInformationPage } from '../../pages/CheckoutInformationPage';
+import { CheckoutConfirmationPage } from '../../pages/CheckoutConfirmationPage';
 
 test.describe('Process Checkout', () => {
   const productsToAdd = ['Sauce Labs Backpack']; 
